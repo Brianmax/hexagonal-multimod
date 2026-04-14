@@ -3,7 +3,6 @@ package com.example.hexagonal_multimodulo.application.service;
 import com.example.hexagonal_multimodulo.domain.model.ProductoModel;
 import com.example.hexagonal_multimodulo.domain.ports.in.ProductoPortIn;
 import com.example.hexagonal_multimodulo.domain.ports.out.ProductPortOut;
-
 public class ProductService implements ProductoPortIn {
     private final ProductPortOut productPortOut;
 
@@ -28,7 +27,7 @@ public class ProductService implements ProductoPortIn {
         // code
         // fin
         // guardamos en la base de datos
-        return null;
+        return productPortOut.createOut(productoModel);
     }
 
     @Override

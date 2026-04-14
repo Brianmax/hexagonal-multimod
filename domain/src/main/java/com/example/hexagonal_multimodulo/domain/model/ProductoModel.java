@@ -1,5 +1,8 @@
 package com.example.hexagonal_multimodulo.domain.model;
 
+import lombok.Getter;
+
+@Getter
 public class ProductoModel {
     private Long id;
     private String nombre;
